@@ -21,18 +21,22 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../assets/css/site.css">
-<!-- ===== GO-LIVE: Google tag (GA4 + Google Ads) + Consent Mode v2 — DECOMENTEAZA la lansare =====
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RG1VKYJ1ME"></script>
+<!-- Google tag (GA4 + Google Ads) + Consent Mode v2 -->
 <script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
-try{ if(localStorage.getItem('varzaru_consent')==='granted'){ gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'}); } }catch(e){}
-gtag('js', new Date());
-gtag('config','G-RG1VKYJ1ME');
-// gtag('config','AW-XXXXXXXXX'); // <-- Google Ads: completeaza ID-ul de conversie
+(function(){
+  var h=location.hostname;
+  if(h!=='varzaru.ro'&&h!=='www.varzaru.ro')return;
+  var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-RG1VKYJ1ME';document.head.appendChild(s);
+  window.dataLayer=window.dataLayer||[];
+  function gtag(){dataLayer.push(arguments);}
+  window.gtag=gtag;
+  gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
+  try{if(localStorage.getItem('varzaru_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
+  gtag('js',new Date());
+  gtag('config','G-RG1VKYJ1ME');
+  gtag('config','AW-1033380525');
+})();
 </script>
-===== /GO-LIVE ===== -->
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Acasă", "item": "https://varzaru.ro/"}, {"@type": "ListItem", "position": 2, "name": "Articole", "item": "https://varzaru.ro/articole/"}, {"@type": "ListItem", "position": 3, "name": "Speță reală: de la 50.000 la 65.000 € daune morale pentru o victimă", "item": "https://varzaru.ro/articole/speta-accident-rutier-cu-victima-daune-morale/"}]}, {"@type": "BlogPosting", "headline": "Speță reală: de la 50.000 la 65.000 € daune morale pentru o victimă", "image": "https://varzaru.ro/assets/img/articole/speta-accident-rutier-cu-victima-daune-morale.jpg", "description": "Caz real din practica noastră: cum am obținut majorarea daunelor morale de la 50.000 la 65.000 de euro pentru o victimă cu peste 80 de zile de îngrijiri medicale.", "datePublished": "2023-09-12", "dateModified": "2023-09-12", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://varzaru.ro/articole/speta-accident-rutier-cu-victima-daune-morale/"}, "author": {"@type": "Organization", "name": "Cabinet de Avocat Vărzaru Ion", "url": "https://varzaru.ro/"}, "publisher": {"@type": ["LegalService", "Attorney"], "name": "Cabinet de Avocat Vărzaru Ion", "telephone": "+40788550057", "areaServed": {"@type": "Country", "name": "România"}}, "articleSection": "Speță reală"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Cât a durat tot procesul?", "acceptedAnswer": {"@type": "Answer", "text": "Aproximativ 3 ani, de la accident până la decizia definitivă din apel. Faza penală și cele două grade de jurisdicție civilă consumă timp, dar permit administrarea probelor care cresc despăgubirea."}}, {"@type": "Question", "name": "De ce nu s-au luat banii direct de la asigurător?", "acceptedAnswer": {"@type": "Answer", "text": "Asigurătorii oferă sume fixe, modice, limitate la înscrisuri, fără proba cu martori. În instanță s-a putut dovedi întreaga dimensiune a suferinței, ceea ce a dus la o sumă mult mai mare."}}]}]}
 </script>

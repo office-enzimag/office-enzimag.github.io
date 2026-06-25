@@ -45,6 +45,7 @@ document.querySelectorAll('form.cbox[action*="web3forms.com"]').forEach(form=>{
     try{
       const res=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});
       if(!res.ok)throw new Error('http');
+      if(typeof gtag==='function'){gtag('event','conversion',{'send_to':'AW-1033380525/ydR9CLHCoYwCEK3F4OwD'});}
       form.innerHTML='<div class="form-ok"><b>Mulțumim!</b>Am primit solicitarea și vă sunăm în cel mai scurt timp. Pentru urgențe, sunați direct la +40 788 55 00 57.</div>';
     }catch(err){
       btn.disabled=false;btn.innerHTML=orig;
