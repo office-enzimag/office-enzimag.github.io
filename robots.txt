@@ -1,5 +1,23 @@
-# STAGING — site ascuns pana la go-live.
-# ⚠️ LA CUTOVER pe varzaru.ro: restaureaza robots.txt de productie
-# (User-agent:* Allow:/ + crawleri AI + Sitemap: https://varzaru.ro/sitemap.xml).
 User-agent: *
-Disallow: /
+Allow: /
+
+# Crawleri AI permiși explicit (vizibilitate în ChatGPT / Perplexity / Google AI Overviews)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://varzaru.ro/sitemap.xml
