@@ -799,3 +799,20 @@ img{max-width:100%;display:block}
 .barem b{font-family:var(--serif);font-size:1.9rem;color:var(--gold-deep);font-weight:600;display:flex;align-items:baseline;gap:7px;font-feature-settings:"lnum" 1}
 .barem b small{font-size:.78rem;color:var(--muted);font-family:var(--sans);font-weight:500;letter-spacing:.04em;text-transform:uppercase}
 .barem p{color:var(--muted);font-size:.92rem;line-height:1.6;margin-top:10px}
+
+/* ---------- LANDING ADS: proof points in hero + formular scurt (24.09.2026) ---------- */
+.page-hero .hero-proof{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:26px;padding-top:18px;border-top:1px solid var(--gold-faint);font-family:var(--sans);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-ivory);max-width:780px}
+.page-hero .hero-proof span{display:inline-flex;align-items:center;gap:8px}
+.page-hero .hero-proof span::before{content:"";width:5px;height:5px;background:var(--gold);transform:rotate(45deg);flex:none}
+.page-hero .hero-proof b{color:var(--gold-2);font-weight:600}
+.quick-lead{position:relative;z-index:3;margin-top:-40px}
+.quick-lead .cbox{padding:34px 38px}
+.quick-lead .cbox h3{font-size:1.3rem;margin-bottom:6px}
+.quick-lead .ql-sub{color:var(--muted-ivory);font-size:.92rem;line-height:1.55;margin-bottom:22px;position:relative;z-index:2}
+.quick-lead .ql-grid{display:grid;grid-template-columns:1fr 1fr auto;gap:14px;align-items:end;position:relative;z-index:2}
+.quick-lead .ql-grid .field{margin-bottom:0}
+.quick-lead .ql-grid .btn{justify-content:center;white-space:nowrap}
+.quick-lead .ql-note{font-size:.72rem;line-height:1.5;color:var(--muted-ivory);margin-top:14px;position:relative;z-index:2}
+.quick-lead .ql-note a{color:var(--gold-soft)}
+.quick-lead .form-ok{padding:18px 0 0}
+@media(max-width:760px){.quick-lead{margin-top:-24px}.quick-lead .cbox{padding:26px 20px}.quick-lead .ql-grid{grid-template-columns:1fr}.quick-lead .ql-grid .btn{width:100%}}

@@ -66,6 +66,15 @@ document.querySelectorAll('form.cbox[action*="web3forms.com"]').forEach(form=>{
   modal.querySelectorAll('[data-close]').forEach(function(el){ el.addEventListener('click',close); });
   document.addEventListener('keydown',function(e){ if(e.key==='Escape' && !modal.hidden) close(); });
 })();
+// Conversii Ads (secundare) + key events GA4 (suna_acum / wapp) pentru clic pe telefon / WhatsApp de pe site (24.09.2026).
+// Pe desktop tel: deschide popup-ul (nu suna) -> nu numaram; pe mobil/touch numaram la clic.
+(function(){
+  var TEL='AW-1033380525/fDX9CPqRvIMdEK3F4OwD', WA='AW-1033380525/_dL9CJOTvIMdEK3F4OwD';
+  var isDesktop=function(){ return matchMedia('(min-width:981px) and (pointer:fine)').matches; };
+  function fire(label,ev){ if(typeof gtag!=='function') return; gtag('event','conversion',{'send_to':label}); gtag('event',ev,{'event_category':'contact','event_label':location.pathname}); }
+  document.querySelectorAll('a[href^="tel:"]').forEach(function(a){ a.addEventListener('click',function(){ if(!isDesktop()) fire(TEL,'suna_acum'); }); });
+  document.querySelectorAll('a[href*="wa.me/"],a[href*="whatsapp.com/"]').forEach(function(a){ a.addEventListener('click',function(){ fire(WA,'wapp'); }); });
+})();
 // Cost prima consultatie: 500 -> 100 (incetineste/pauza) -> coboara animat la 0
 (function(){
   var el=document.querySelector('.cost-count'); if(!el) return;
